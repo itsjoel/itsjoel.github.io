@@ -1,3 +1,18 @@
 body {
 color: black;
 }
+header {
+  font-family:Space Mono;
+}
+h1 {
+  font-family:Space Mono;
+  font-size:3em;
+  font-style:normal;
+  font-weight:700;
+}
+.subtitle {
+  font-family:Space Mono;
+  font-size:1em;
+  font-style:normal;
+  font-weight:400;
+}
