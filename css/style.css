@@ -2,18 +2,78 @@ body {
 color: black;
 }
 header {
-  font-family:Space Mono;
+  font-family:Space Mono, monospace;
 }
 h1 {
-  font-family:Space Mono;
+  font-family:Space Mono, monospace;
   font-size:3em;
   font-style:normal;
   font-weight:700;
+  margin-bottom:0em;
+  line-height: 0.5em;
 }
 .subtitle {
-  font-family:Space Mono;
+  margin-top:0em
+  font-family:Space Mono, monospace;
   font-size:1em;
   font-style:italic;
   font-weight:400;
   color: gray;
+}
+.body {
+  font-family: Work Sans, sans-serif;
+  font-weight: 400;
+}
+.enthusiastic {
+  font-family: Concert One;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#intro {
+  font-family: Work Sans, sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+}
+
+#wip {
+  font-family: "Comic Sans MS", cursive, display;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 5em;
+  /* Chrome, Safari, Opera */
+ -webkit-animation: rainbow 1s infinite; 
+ 
+ /* Internet Explorer */
+ -ms-animation: rainbow 1s infinite;
+ 
+ /* Standar Syntax */
+ animation: rainbow 1s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+ 20%{color: red;}
+ 40%{color: yellow;}
+ 60%{color: green;}
+ 80%{color: blue;}
+ 100%{color: orange;}	
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+ 20%{color: red;}
+ 40%{color: yellow;}
+ 60%{color: green;}
+ 80%{color: blue;}
+ 100%{color: orange;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+ 20%{color: red;}
+ 40%{color: yellow;}
+ 60%{color: green;}
+ 80%{color: blue;}
+ 100%{color: orange;}	
 }
