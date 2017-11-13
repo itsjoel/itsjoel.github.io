@@ -121,3 +121,7 @@ h1 {
       transform:rotate(360deg);
   }
 }
+header {
+  text-align: center;
+  
+}
