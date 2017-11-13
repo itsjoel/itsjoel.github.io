@@ -1,5 +1,6 @@
 body {
 color: black;
+background-color: rgb(250, 242, 231);
 }
 header {
   font-family:Space Mono, monospace;
@@ -35,4 +36,8 @@ h1 {
   font-family: Work Sans, sans-serif;
   font-weight: 400;
   font-size: 1.75em;
+}
+
+header {
+  text-align: center;
 }
