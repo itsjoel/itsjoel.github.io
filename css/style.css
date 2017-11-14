@@ -35,7 +35,35 @@ body {
   }
   
   #intro {
+    text-align: center;
+    display: block;
     font-family: Work Sans, sans-serif;
     font-weight: 400;
     font-size: 1.75em;
+    max-width: 900px;
+    margin: auto;
   }
+
+#layout-columns {
+  /* border: 1px solid red; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column-head {
+  display: block;
+  text-align: center;
+  font-family: Space Mono, monospace;
+  font-size: 2.5vw;
+  background-color: white;
+  width: 20vw;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 3px black ;
+
+}
+
+#column-left{ float: left; width: 33%; }
+#column-right{ float: right; width: 33%; }
+#column-center{ display: inline-block; width: 33%; }
