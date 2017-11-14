@@ -22,14 +22,16 @@ h2 {
   font-size: 2.5em;
   margin-bottom: -20px;
 }
-
 a {
+  text-decoration: none;
+}
+.inline-link {
   font-family: Space Mono, monospace;
   text-decoration: underline;
   font-style: italic;  
   color: darkblue;
 }
-a:hover {
+.inline-link:hover{
   font-style: Normal;
 }
 article {
