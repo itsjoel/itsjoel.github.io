@@ -3,42 +3,50 @@ body {
   background-color: rgb(250, 242, 231);
   padding-bottom: 100px;
 }
+
 .subtitle {
   font-family: Space Mono, monospace;
-  font-size:1em;
-  font-style:italic;
-  font-weight:400;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 400;
   color: gray;
   margin-bottom: -15px;
 }
+
 .underline {
   font-family: Space Mono, monospace;
   font-weight: 400;
   color: gray;
   margin-bottom: 25px;
 }
+
 h2 {
   font-family: Space Mono, fantasy;
   font-size: 2.5em;
   margin-bottom: -20px;
 }
+
 a {
   text-decoration: none;
 }
+
 .inline-link {
   font-family: Space Mono, monospace;
   text-decoration: underline;
-  font-style: italic;  
+  font-style: italic;
   color: darkblue;
 }
-.inline-link:hover{
+
+.inline-link:hover {
   font-style: Normal;
 }
+
 article {
   display: block;
   max-width: 1000px;
   margin: 0 auto;
 }
+
 article .content {
   background-color: white;
   margin-top: -30px;
@@ -46,8 +54,9 @@ article .content {
   font-family: Work Sans, sans-serif;
   font-size: 1.25em;
   line-height: 1.5em;
-  box-shadow: 1px 1px 3px rgb(66,66,66);
+  box-shadow: 1px 1px 3px rgb(66, 66, 66);
 }
+
 article .content p {
   max-width: 800px;
   margin: 0 auto;
