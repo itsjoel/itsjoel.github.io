@@ -32,13 +32,8 @@ h1 {
 }
 .subtitle {
 <<<<<<< HEAD
-<<<<<<< HEAD
   font-family: Space Mono, monospace;
 >>>>>>> development
-=======
-  margin-top:0em
-  font-family:Space Mono, monospace;
->>>>>>> parent of 79d5a0f... Continued adding to style
 =======
   margin-top:0em
   font-family:Space Mono, monospace;
@@ -52,7 +47,6 @@ h1 {
   font-family: Work Sans, sans-serif;
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   font-weight: 400;
 }
 .enthusiastic {
@@ -64,8 +58,6 @@ h1 {
   font-size: 1.25em;
 =======
 >>>>>>> parent of 79d5a0f... Continued adding to style
-=======
->>>>>>> parent of 79d5a0f... Continued adding to style
   font-weight: 400;
 }
 .enthusiastic {
@@ -73,14 +65,11 @@ h1 {
   font-size: 1.25em;
   font-style: normal;
   font-weight: 400;
-<<<<<<< HEAD
 <<<<<<< HEAD
   font-size: 0.95em;
   vertical-align: center;
   color: black;
 >>>>>>> development
-=======
->>>>>>> parent of 79d5a0f... Continued adding to style
 =======
 >>>>>>> parent of 79d5a0f... Continued adding to style
 }
@@ -89,7 +78,6 @@ h1 {
   font-family: Work Sans, sans-serif;
   font-weight: 400;
   font-size: 1.75em;
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 }
@@ -184,14 +172,9 @@ header {
 =======
 >>>>>>> development
 =======
-=======
->>>>>>> parent of 79d5a0f... Continued adding to style
 }
 
 header {
   text-align: center;
-<<<<<<< HEAD
->>>>>>> parent of 79d5a0f... Continued adding to style
-=======
 >>>>>>> parent of 79d5a0f... Continued adding to style
 }
