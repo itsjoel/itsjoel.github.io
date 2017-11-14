@@ -21,19 +21,23 @@ background-color: rgb(250, 242, 231);
 }
 header {
   font-family:Space Mono, monospace;
-  text-align: center;
 }
-#website-title {
+h1 {
   font-family:Space Mono, monospace;
-  font-size: calc(1em + 4vw);
+  font-size:3em;
   font-style:normal;
   font-weight:700;
   margin-bottom:0em;
-  line-height: 5vw;
+  line-height: 0.5em;
 }
 .subtitle {
+<<<<<<< HEAD
   font-family: Space Mono, monospace;
 >>>>>>> development
+=======
+  margin-top:0em
+  font-family:Space Mono, monospace;
+>>>>>>> parent of 79d5a0f... Continued adding to style
   font-size:1em;
   font-style:italic;
   font-weight:400;
@@ -41,6 +45,7 @@ header {
 }
 .body {
   font-family: Work Sans, sans-serif;
+<<<<<<< HEAD
 <<<<<<< HEAD
   font-weight: 400;
 }
@@ -51,21 +56,29 @@ header {
   font-weight: 400;
 =======
   font-size: 1.25em;
+=======
+>>>>>>> parent of 79d5a0f... Continued adding to style
   font-weight: 400;
 }
 .enthusiastic {
-  font-family: Concert One, monospace;
+  font-family: Concert One;
+  font-size: 1.25em;
+  font-style: normal;
   font-weight: 400;
+<<<<<<< HEAD
   font-size: 0.95em;
   vertical-align: center;
   color: black;
 >>>>>>> development
+=======
+>>>>>>> parent of 79d5a0f... Continued adding to style
 }
 
 #intro {
   font-family: Work Sans, sans-serif;
   font-weight: 400;
   font-size: 1.75em;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -158,4 +171,10 @@ header {
   
 =======
 >>>>>>> development
+=======
+}
+
+header {
+  text-align: center;
+>>>>>>> parent of 79d5a0f... Continued adding to style
 }
