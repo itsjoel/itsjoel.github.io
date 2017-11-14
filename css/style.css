@@ -1,41 +1,41 @@
 body {
-color: black;
-background-color: rgb(250, 242, 231);
-}
-header {
-  font-family:Space Mono, monospace;
-  text-align: center;
-}
-#website-title {
-  font-family:Space Mono, monospace;
-  font-size: calc(1em + 4vw);
-  font-style:normal;
-  font-weight:700;
-  margin-bottom:0em;
-  line-height: 5vw;
-}
-.subtitle {
-  font-family: Space Mono, monospace;
-  font-size:1em;
-  font-style:italic;
-  font-weight:400;
-  color: gray;
-}
-.body {
-  font-family: Work Sans, sans-serif;
-  font-size: 1.25em;
-  font-weight: 400;
-}
-.enthusiastic {
-  font-family: Concert One, monospace;
-  font-weight: 400;
-  font-size: 0.95em;
-  vertical-align: center;
   color: black;
-}
-
-#intro {
-  font-family: Work Sans, sans-serif;
-  font-weight: 400;
-  font-size: 1.75em;
-}
+  background-color: rgb(250, 242, 231);
+  }
+  header {
+    font-family:Space Mono, monospace;
+    text-align: center;
+  }
+  #website-title {
+    font-family:Space Mono, monospace;
+    font-size: calc(1em + 4vw);
+    font-style:normal;
+    font-weight:700;
+    margin-bottom:0em;
+    line-height: 5vw;
+  }
+  .subtitle {
+    font-family: Space Mono, monospace;
+    font-size:1em;
+    font-style:italic;
+    font-weight:400;
+    color: gray;
+  }
+  .body {
+    font-family: Work Sans, sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+  .enthusiastic {
+    font-family: Concert One, monospace;
+    font-weight: 400;
+    font-size: 0.95em;
+    vertical-align: center;
+    color: black;
+  }
+  
+  #intro {
+    font-family: Work Sans, sans-serif;
+    font-weight: 400;
+    font-size: 1.75em;
+  }
