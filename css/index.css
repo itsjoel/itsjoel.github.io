@@ -109,3 +109,35 @@ h2 {
 .underline {
     text-align: center;
 }
+@media all and (max-width:425px) {
+   /* body {
+        color: red !important;
+    } */
+    #project-header .underline{
+        margin-bottom: 0px;
+    }
+    .column {
+        width: 100% !important;
+        display: inline-block !important;
+    }
+    .column-head {
+        margin-top: 10px;
+        font-size: 9vw;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        height: 20px;
+        margin-bottom: -10px;
+        color: darkblue;
+    }
+    .project {
+        padding: 10px;
+        width: 85%;
+    }
+    .project h3 {
+        font-size: 7vw;
+    }
+    .project p {
+        font-size: 1.25em;
+    }
+}
