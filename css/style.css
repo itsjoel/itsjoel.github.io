@@ -1,6 +1,5 @@
 body {
 color: black;
-<<<<<<< HEAD
 }
 header {
   font-family:Space Mono, monospace;
@@ -16,24 +15,6 @@ h1 {
 .subtitle {
   margin-top:0em
   font-family:Space Mono, monospace;
-=======
-background-color: rgb(250, 242, 231);
-}
-header {
-  font-family:Space Mono, monospace;
-  text-align: center;
-}
-#website-title {
-  font-family:Space Mono, monospace;
-  font-size: calc(1em + 4vw);
-  font-style:normal;
-  font-weight:700;
-  margin-bottom:0em;
-  line-height: 5vw;
-}
-.subtitle {
-  font-family: Space Mono, monospace;
->>>>>>> development
   font-size:1em;
   font-style:italic;
   font-weight:400;
@@ -41,7 +22,6 @@ header {
 }
 .body {
   font-family: Work Sans, sans-serif;
-<<<<<<< HEAD
   font-weight: 400;
 }
 .enthusiastic {
@@ -49,24 +29,12 @@ header {
   font-size: 1.25em;
   font-style: normal;
   font-weight: 400;
-=======
-  font-size: 1.25em;
-  font-weight: 400;
-}
-.enthusiastic {
-  font-family: Concert One, monospace;
-  font-weight: 400;
-  font-size: 0.95em;
-  vertical-align: center;
-  color: black;
->>>>>>> development
 }
 
 #intro {
   font-family: Work Sans, sans-serif;
   font-weight: 400;
   font-size: 1.75em;
-<<<<<<< HEAD
 }
 
 #wip {
@@ -156,6 +124,4 @@ header {
 header {
   text-align: center;
   
-=======
->>>>>>> development
 }
