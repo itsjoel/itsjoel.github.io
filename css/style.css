@@ -1,12 +1,11 @@
 body {
   color: black;
   background-color: rgb(250, 242, 231);
-  padding-bottom: 100px;
   word-wrap: normal;
 }
 
 .subtitle {
-  font-family: Space Mono, monospace;
+  font-family: "Space Mono", monospace;
   font-size: 1em;
   font-style: italic;
   font-weight: 400;
@@ -15,14 +14,14 @@ body {
 }
 
 .underline {
-  font-family: Space Mono, monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 400;
   color: gray;
   margin-bottom: 25px;
 }
 
 h2 {
-  font-family: Space Mono, fantasy;
+  font-family: "Space Mono", fantasy;
   font-size: 2.5em;
   margin-bottom: -20px;
 }
@@ -32,7 +31,7 @@ a {
 }
 
 .inline-link {
-  font-family: Space Mono, monospace;
+  font-family: "Space Mono", monospace;
   text-decoration: underline;
   font-style: italic;
   color: darkblue;
@@ -52,7 +51,7 @@ article .content {
   background-color: white;
   margin-top: -30px;
   padding: 20px;
-  font-family: Work Sans, sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1.25em;
   line-height: 1.5em;
   box-shadow: 1px 1px 3px rgb(66, 66, 66);
