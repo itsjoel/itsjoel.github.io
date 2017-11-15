@@ -1,6 +1,7 @@
 body {
     padding-bottom: 130px;
 }
+
 #website-header {
     font-family: "Space Mono", monospace;
     text-align: center;
@@ -16,7 +17,7 @@ body {
 }
 
 .enthusiastic {
-    font-family: Concert One, monospace;
+    font-family: "Concert One", monospace;
     font-weight: 400;
     font-size: 0.95em;
     vertical-align: center;
@@ -43,7 +44,7 @@ body {
     color: darkblue;
     display: block;
     text-align: center;
-    font-family: Concert One, monospace;
+    font-family: "Concert One", monospace;
     font-size: calc(2vw + 0.4em);
     background-color: white;
     width: 90%;
@@ -137,7 +138,6 @@ h2 {
         border: none;
         margin-bottom: -20px;
         text-decoration: underline;
-        
     }
     .project {
         padding: 10px;
