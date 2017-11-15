@@ -2,6 +2,7 @@ body {
   color: black;
   background-color: rgb(250, 242, 231);
   padding-bottom: 100px;
+  word-wrap: normal;
 }
 
 .subtitle {
