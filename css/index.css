@@ -1,3 +1,6 @@
+body {
+    padding-bottom: 130px;
+}
 #website-header {
     font-family: Space Mono, monospace;
     text-align: center;
