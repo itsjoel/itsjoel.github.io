@@ -8,8 +8,7 @@
     font-size: calc(1em + 4vw);
     font-style: normal;
     font-weight: 700;
-    margin-bottom: 0em;
-    line-height: 5vw;
+    margin-bottom: -1em;
 }
 
 .enthusiastic {
@@ -109,11 +108,18 @@ h2 {
 .underline {
     text-align: center;
 }
+
 @media all and (max-width:425px) {
-   /* body {
+    /* body {
         color: red !important;
     } */
-    #project-header .underline{
+    #website-title {
+        font-size: 12vw;
+        line-height: 1em;
+        margin-bottom: -12px;
+        text-align: center;
+    }
+    #project-header .underline {
         margin-bottom: 0px;
     }
     .column {
