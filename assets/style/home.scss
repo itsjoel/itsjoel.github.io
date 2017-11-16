@@ -36,11 +36,13 @@ $background_color_2: transparent;
 	99% {
 		visibility: visible;
 		display: inline-block;
-		opacity: 0;
+        opacity: 0;
+        width: initial;
 		transform: scale(0, 1);
 		font-size: 0%;
 	}
 	100% {
+        width: 0;
 		visibility: hidden;
 		display: none;
 		opacity: 0;
