@@ -238,7 +238,7 @@ h2 {
 }
 
 .start-hid {
-  visibility: hidden;
+  visibility: visible;
   display: inline-block;
   font-size: 0;
   opacity: 0;
