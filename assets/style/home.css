@@ -140,13 +140,14 @@ h2 {
   0% {
     font-size: 0%;
     opacity: 0;
+    width: 0;
     color: red; /*debugging*/
     -webkit-transform: scale(0, 1);
             transform: scale(0, 1)
   }
   100% {
     font-size: 100%;
-    width: initial;
+    width: 3em;
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
     opacity: 1;
@@ -240,7 +241,7 @@ h2 {
 .start-hid {
   visibility: visible;
   display: inline-block;
-  font-size: 0.1%;
+  width: 0;
   opacity: 0;
   -webkit-animation-name: appear;
           animation-name: appear;
