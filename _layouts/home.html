@@ -25,42 +25,19 @@
         <p class="underline">========================</p>
     </div>
     <div id="layout-columns">
-        <div id="column-left" class="column">
-            {% assign left-column-tag = page.columns[0] %}
-            <div class="column-head">{{ left-column-tag | capitalize }}</div>
-            {% for project in site.projects %}{% if project.tags contains left-column-tag %}
+        {% for column-name in page.columns %}
+        <div class="column">
+            <div class="column-head">{{ column-name | capitalize }}</div>
+            {% for project in site.projects %}{% if project.tags contains column-name %}
             <a href="{{ project.url }}" class="project-link">
-                <div class="project">
+                <div class="project-card">
                     <h3>{{ project.title }}</h3>
                     <p>{{ project.description }}</p>
                 </div>
             </a>
             {% endif %}{% endfor %}
         </div>
-        <div id="column-center" class="column">
-            {% assign center-column-tag = page.columns[1] %}
-            <div class="column-head">{{ center-column-tag | capitalize }}</div>
-            {% for project in site.projects %}{% if project.tags contains center-column-tag %}
-            <a href="{{ project.url }}" class="project-link">
-                <div class="project">
-                    <h3>{{ project.title }}</h3>
-                    <p>{{ project.description }}</p>
-                </div>
-            </a>
-            {% endif %}{% endfor %}
-        </div>
-        <div id="column-right" class="column">
-            {% assign right-column-tag = page.columns[2] %}
-            <div class="column-head">{{ right-column-tag | capitalize }}</div>
-            {% for project in site.projects %}{% if project.tags contains right-column-tag %}
-            <a href="{{ project.url }}" class="project-link">
-                <div class="project">
-                    <h3>{{ project.title }}</h3>
-                    <p>{{ project.description }}</p>
-                </div>
-            </a>
-            {% endif %}{% endfor %}
-        </div>
+        {% endfor %}
     </div>
     <h1 style="font-family:cursive">WORK IN PROGRESS</h1>
 </body>
