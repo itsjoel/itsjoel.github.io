@@ -1,0 +1,10 @@
+name: It's Joel, Online
+
+title: Joel, Online
+
+kramdown:
+  auto_ids: true
+
+collections:
+  projects:
+    output: true
