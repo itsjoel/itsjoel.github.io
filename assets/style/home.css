@@ -155,13 +155,13 @@ h2 {
 
 @keyframes appear {
   0% {
-    font-size: 0%;
+    font-size: 0;
     opacity: 0;
     -webkit-transform: scale(0, 1);
             transform: scale(0, 1)
   }
   100% {
-    font-size: 100%;
+    font-size: initial;
     width: initial;
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
