@@ -11,14 +11,16 @@ $font_family_4: "Space Mono", fantasy;
 $background_color_1: white;
 $background_color_2: transparent;
 
-@keyframes appear {
+@keyframes title-appear {
 	0% {
 /*font-size: 0;*/
 		opacity: 0;
-		transform: scale(0, 1);
+        transform: scale(0, 1);
+        font-size: 0;
 	}
 	100% {
 /*font-size: initial;*/
+        font-size: 100%;
 		transform: scale(1, 1);
 		opacity: 1;
 	}
@@ -170,7 +172,7 @@ h2 {
 	visibility: visible;
 	display: inline-block;
 	opacity: 0;
-	animation-name: appear;
+	animation-name: title-appear;
 	animation-delay: 1s;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
