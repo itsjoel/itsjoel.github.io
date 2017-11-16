@@ -11,68 +11,6 @@ $font_family_4: "Space Mono", fantasy;
 $background_color_1: white;
 $background_color_2: transparent;
 
-@keyframes title-appear {
-	0% {
-/*font-size: 0;*/
-		opacity: 0;
-        transform: scale(0, 1);
-        font-size: 0;
-	}
-	100% {
-/*font-size: initial;*/
-        font-size: 100%;
-		transform: scale(1, 1);
-		opacity: 1;
-	}
-}
-
-@keyframes title-disappear {
-	0% {
-		visibility: visible;
-		display: inline-block;
-		transform: scale(1, 1);
-		font-size: 100%;
-	}
-	99% {
-		visibility: visible;
-		display: inline-block;
-        opacity: 0;
-        width: initial;
-		transform: scale(0, 1);
-		font-size: 0%;
-	}
-	100% {
-        width: 0;
-		visibility: hidden;
-		display: none;
-		opacity: 0;
-		transform: scale(0, 1);
-		font-size: 0;
-	}
-}
-/* body {
-        color: red !important;
-    } */
-.start-hid {
-    visibility: visible;
-    display: inline-block;
-    width: 0;
-    opacity: 0;
-    animation-name: title-appear;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
-.start-vis {
-    visibility: visible;
-    display: inline-block;
-    animation-name: title-disappear;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
 body {
 	padding-bottom: 130px;
 	transition: 0.25s;
