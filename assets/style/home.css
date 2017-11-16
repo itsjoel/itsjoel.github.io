@@ -240,7 +240,7 @@ h2 {
 
 .start-hid {
   color: red;
-  font-size: 0;
+  font-size: 0.1%;
   visibility: visible;
   display: inline-block;
   opacity: 0;
