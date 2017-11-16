@@ -21,7 +21,7 @@ $background_color_2: transparent;
 	}
 	100% {
 /*font-size: initial;*/
-        width: auto;
+        width: calc(auto);
         font-size: 100%;
 		transform: scale(1, 1);
 		opacity: 1;
