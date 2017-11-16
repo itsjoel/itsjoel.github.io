@@ -239,7 +239,7 @@ h2 {
 }
 
 .start-hid {
-  color: red
+  color: red;
   font-size: 0;
   visibility: visible;
   display: inline-block;
