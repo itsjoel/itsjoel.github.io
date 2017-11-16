@@ -1,5 +1,6 @@
 body {
   padding-bottom: 130px;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
@@ -68,14 +69,18 @@ body {
   padding-bottom: 2vw;
   margin: 0 auto;
   border: 1px solid white;
-  box-shadow: 1.25px 4px 6px rgb(77, 77, 77);
+  -webkit-box-shadow: 1.25px 4px 6px rgb(77, 77, 77);
+          box-shadow: 1.25px 4px 6px rgb(77, 77, 77);
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   text-decoration: underline;
-  text-decoration-style: wavy;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
 }
 
 .column-head:hover {
-  box-shadow: 1.75px 6px 10px rgb(61, 61, 61);
+  -webkit-box-shadow: 1.75px 6px 10px rgb(61, 61, 61);
+          box-shadow: 1.75px 6px 10px rgb(61, 61, 61);
 }
 
 .project {
@@ -84,14 +89,17 @@ body {
   background-color: white;
   width: calc(90% - 12px);
   margin: 0 auto;
-  box-shadow: 1px 3px 5px gray;
+  -webkit-box-shadow: 1px 3px 5px gray;
+          box-shadow: 1px 3px 5px gray;
   margin-top: 15px;
   padding: 6px;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 a div:hover.project {
-  box-shadow: 3px 5px 9px rgb(124, 124, 124);
+  -webkit-box-shadow: 3px 5px 9px rgb(124, 124, 124);
+          box-shadow: 3px 5px 9px rgb(124, 124, 124);
 }
 
 .project h3 {
@@ -101,6 +109,7 @@ a div:hover.project {
   text-decoration: underline;
   font-style: italic;
   line-height: 1em;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -127,38 +136,84 @@ h2 {
   text-align: center;
 }
 
-@keyframes appear {
+@-webkit-keyframes appear {
   0% {
     font-size: 0%;
     opacity: 0;
-    transform: scale(0, 1)
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1)
   }
   100% {
     font-size: 100%;
     width: initial;
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
     opacity: 1;
     }
 }
-@keyframes title-disappear {
+
+@keyframes appear {
+  0% {
+    font-size: 0%;
+    opacity: 0;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1)
+  }
+  100% {
+    font-size: 100%;
+    width: initial;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 1;
+    }
+}
+@-webkit-keyframes title-disappear {
   0% {
     visibility: visible;
     display: inline-block;
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
     font-size: 100%;
   }
   99% {
     visibility: visible;
     display: inline-block;
     opacity: 0;
-    transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
     font-size: 0%;
   }
   100% {
     visibility: hidden;
     display: none;
     opacity: 0;
-    transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+    font-size: 0;
+  }
+}
+@keyframes title-disappear {
+  0% {
+    visibility: visible;
+    display: inline-block;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    font-size: 100%;
+  }
+  99% {
+    visibility: visible;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+    font-size: 0%;
+  }
+  100% {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
     font-size: 0;
   }
 }
@@ -170,11 +225,16 @@ h2 {
 .start-vis {
   visibility: visible;
   display: inline-block;
-  animation-name: title-disappear;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-name: title-disappear;
+          animation-name: title-disappear;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 .start-hid {
@@ -182,11 +242,16 @@ h2 {
   visibility: visible;
   display: inline-block;
   opacity: 0;
-  animation-name: appear;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 strong {
   font-weight: 600;
@@ -213,7 +278,8 @@ strong {
     margin-top: 10px;
     font-size: 9.5vw;
     background-color: transparent;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     border: none;
     margin-bottom: -20px;
   }
