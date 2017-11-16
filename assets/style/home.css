@@ -240,10 +240,10 @@ h2 {
 
 .start-hid {
   color: red;
-  font-size: 0.1%;
+  font-size: 50%;
   visibility: visible;
   display: inline-block;
-  opacity: 0;
+  opacity: 1;
   -webkit-animation-name: appear;
           animation-name: appear;
   -webkit-animation-delay: 1s;
