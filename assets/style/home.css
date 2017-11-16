@@ -162,7 +162,6 @@ h2 {
   }
   100% {
     font-size: initial;
-    width: initial;
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
     opacity: 1;
