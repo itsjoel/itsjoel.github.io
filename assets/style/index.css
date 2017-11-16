@@ -1,152 +1,175 @@
 body {
-    padding-bottom: 130px;
+  padding-bottom: 130px;
+  transition: 0.25s;
+
 }
 
 #website-header {
-    font-family: "Space Mono", monospace;
-    text-align: center;
-    padding-bottom: 7px;
+  font-family: "Space Mono", monospace;
+  text-align: center;
+  padding-bottom: 7px;
 }
 
 #website-title {
-    font-family: "Space Mono", monospace;
-    font-size: calc(1em + 4vw);
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: -25px;
+  font-family: "Space Mono", monospace;
+  font-size: calc(1em + 4vw);
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: -25px;
 }
 
 .enthusiastic {
-    font-family: "Concert One", monospace;
-    font-weight: 400;
-    font-size: 0.95em;
-    vertical-align: center;
-    color: black;
+  font-family: "Concert One", monospace;
+  font-weight: 400;
+  font-size: 0.95em;
+  vertical-align: central;
+  color: black;
 }
 
 #intro {
-    text-align: center;
-    display: block;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    font-size: 1.75em;
-    max-width: 900px;
-    margin: auto;
+  text-align: center;
+  display: block;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  max-width: 900px;
+  margin: auto;
 }
 
 #layout-columns {
-    /* border: 1px solid red; */
-    max-width: 1000px;
-    margin: 0 auto;
+  /* border: 1px solid red; */
+  max-width: 1000px;
+  margin: 0 auto;
 }
-
-.column-head {
-    color: darkblue;
-    display: block;
-    text-align: center;
-    font-family: "Concert One", monospace;
-    font-size: calc(2vw + 0.4em);
-    background-color: white;
-    width: 90%;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    margin: 0 auto;
-    border: 1px solid white;
-    box-shadow: 1px 1px 10px rgb(66, 66, 66);
-}
-
 #column-left {
-    float: left;
-    width: 33%;
+  float: left;
+  width: 33%;
 }
 
 #column-right {
-    float: right;
-    width: 34%;
+  float: right;
+  width: 34%;
 }
 
 #column-center {
-    display: inline-block;
-    width: 33%;
+  display: inline-block;
+  width: 33%;
+}
+
+.column-head {
+  color: darkblue;
+  display: block;
+  text-align: center;
+  font-family: "Concert One", monospace;
+  font-size: calc(2vw + 0.4em);
+  background-color: white;
+  width: 90%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  margin: 0 auto;
+  border: 1px solid white;
+  box-shadow: 1.25px 4px 6px rgb(77, 77, 77);
+  transition: 0.2s;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.column-head:hover {
+  box-shadow: 1.75px 6px 10px rgb(61, 61, 61);
 }
 
 .project {
-    display: block;
-    text-align: center;
-    background-color: white;
-    width: calc(90% - 12px);
-    margin: 0 auto;
-    box-shadow: 1px 1px 6px gray;
-    margin-top: 15px;
-    padding: 6px;
+  display: block;
+  text-align: center;
+  background-color: white;
+  width: calc(90% - 12px);
+  margin: 0 auto;
+  box-shadow: 1px 3px 5px gray;
+  margin-top: 15px;
+  padding: 6px;
+  transition: 0.2s;
 }
 
+a div:hover.project {
+  box-shadow: 3px 5px 9px rgb(124, 124, 124);
+}
 .project h3 {
-    font-family: "Space Mono", monospace;
-    color: black;
-    font-size: calc(0.75vw + 1.25em);
-    text-decoration: underline;
-    font-style: italic;
-    line-height: 1em;
+  font-family: "Space Mono", monospace;
+  color: black;
+  font-size: calc(0.75vw + 1.25em);
+  text-decoration: underline;
+  font-style: italic;
+  line-height: 1em;
+  transition: 0.2s;
 }
 
-.project h3:hover {
-    font-style: normal;
-    color: darkblue;
+.project:hover h3 {
+  font-style: normal;
+  color: darkblue;
 }
 
 .project p {
-    font-family: "Work Sans", sans-serif;
-    color: black;
-    font-size: calc(0.75vw + 0.5em);
-    word-wrap: break-word;
+  font-family: "Work Sans", sans-serif;
+  color: black;
+  font-size: calc(0.75vw + 0.5em);
+  word-wrap: break-word;
 }
 
 h2 {
-    font-family: "Space Mono", fantasy;
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: -20px;
+  font-family: "Space Mono", fantasy;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: -20px;
 }
 
 .underline {
-    text-align: center;
+  text-align: center;
 }
-
-@media all and (max-width:440px) {
-    /* body {
+@keyframes card-hover {
+  from {
+    box-shadow: 1px 1px 6px gray;
+    width: calc(90% - 12px);
+    font-size: calc(0.75vw + 1.25em);
+  }
+  to {
+    box-shadow: 3px 3px 8px rgb(77, 77, 77);
+    width: calc(1.1 * (90% - 12px));
+    font-size: calc(1.1 * (0.75vw + 1.25em));
+  }
+}
+@media all and (max-width: 440px) {
+  /* body {
         color: red !important;
     } */
-    #website-title {
-        font-size: 12vw;
-        line-height: 1em;
-        margin-bottom: -12px;
-        text-align: center;
-    }
-    #project-header .underline {
-        margin-bottom: -15px;
-    }
-    .column {
-        width: 100% !important;
-        display: inline-block !important;
-    }
-    .column-head {
-        margin-top: 10px;
-        font-size: 9.5vw;
-        background-color: transparent;
-        box-shadow: none;
-        border: none;
-        margin-bottom: -20px;
-        text-decoration: underline;
-    }
-    .project {
-        padding: 10px;
-        width: 85%;
-    }
-    .project h3 {
-        font-size: 7vw;
-    }
-    .project p {
-        font-size: 1.25em;
-    }
+  #website-title {
+    font-size: 12vw;
+    line-height: 1em;
+    margin-bottom: -12px;
+    text-align: center;
+  }
+  #project-header .underline {
+    margin-bottom: -15px;
+  }
+  .column {
+    width: 100% !important;
+    display: inline-block !important;
+  }
+  .column-head {
+    margin-top: 10px;
+    font-size: 9.5vw;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    margin-bottom: -20px;
+  }
+  .project {
+    padding: 10px;
+    width: 85%;
+  }
+  .project h3 {
+    font-size: 7vw;
+  }
+  .project p {
+    font-size: 1.25em;
+  }
 }
