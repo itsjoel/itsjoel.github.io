@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <nav>
-        <a href="/index.html" class="inline-link">&lt;- Back to Main Page</a>
-    </nav>
+    {% include nav.html %}
     <article class="project-description">
         <header>
+            <nav>
+                <a href="/index.html" class="inline-link">&lt;- Back to Main Page</a>
+            </nav>
             <h2 id="website-title">{{ page.title }}</h2>
             <p class="subtitle">{{ page.subtitle }}</p>
             <p class="underline">========================</p>
