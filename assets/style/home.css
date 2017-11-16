@@ -238,10 +238,10 @@ h2 {
 }
 
 .start-hid {
-  color: red;
-  visibility: visible;
+  visibility: hidden;
   display: inline-block;
-  opacity: 1;
+  font-size: 0;
+  opacity: 0;
   -webkit-animation-name: appear;
           animation-name: appear;
   -webkit-animation-delay: 1s;
