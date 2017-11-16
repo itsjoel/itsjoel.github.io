@@ -8,5 +8,6 @@ layout: home
 columns: [programming, cybersecurity, design]
 ---
 {: #intro}
-**Hi!** My name is **Joel Newman**.\\
+<span class="enthusiastic">Hi!</span>\\
+My name is **Joel Newman**.\\
 I am a high schooler interested in **programming**, **design**, **cybersecurity**, and **computer science**.

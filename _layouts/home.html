@@ -3,16 +3,18 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600,700|Concert+One|Space+Mono:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600,700|Concert+One|Space+Mono:400,400i,700,700i"
+        rel="stylesheet">
     <link href="/assets/style/style.css" rel="stylesheet">
-    <link href="/assets/style/index.css" rel="stylesheet">
+    <link href="/assets/style/home.css" rel="stylesheet">
     <title>{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header id="website-header">
-        <h1 id="website-title">{{ page.title }}</h1>
+        <h1 id="website-title"><span class="start-vis">i</span><span class="start-hid">I</span><span>t</span><span class="start-hid">&rsquo;</span><span>s</span><span class="start-hid">&nbsp;</span><span class="start-vis">j</span><span class="start-hid">J</span><span>o</span><span>e</span><span>l</span><span class="start-vis">.</span><span class="start-hid">,</span><span class="start-hid">&nbsp;</span><span class="start-vis">o</span><span class="start-hid">O</span><span>n</span><span>l</span><span>i</span><span>n</span><span>e</span>
+        </h1>
         <p class="subtitle">{{ page.subtitle }}</p>
         <p class="underline">========================</p>
     </header>
@@ -25,7 +27,7 @@
     </div>
     <div id="layout-columns">
         <div id="column-left" class="column">
-        {% assign left-column-tag = page.columns[0] %}
+            {% assign left-column-tag = page.columns[0] %}
             <div class="column-head">{{ left-column-tag | capitalize }}</div>
             {% for project in site.projects %}{% if project.tags contains left-column-tag %}
                 <a href="{{ project.url }}" class="project-link">
@@ -37,29 +39,29 @@
             {% endif %}{% endfor %}
         </div>
         <div id="column-center" class="column">
-        {% assign center-column-tag = page.columns[1] %}
+            {% assign center-column-tag = page.columns[1] %}
             <div class="column-head">{{ center-column-tag | capitalize }}</div>
-                {% for project in site.projects %}{% if project.tags contains center-column-tag %}
-                    <a href="{{ project.url }}" class="project-link">
-                        <div class="project">
-                            <h3>{{ project.title }}</h3>
-                            <p>{{ project.description }}</p>
-                        </div>
-                    </a>
+            {% for project in site.projects %}{% if project.tags contains center-column-tag %}
+                <a href="{{ project.url }}" class="project-link">
+                    <div class="project">
+                        <h3>{{ project.title }}</h3>
+                        <p>{{ project.description }}</p>
+                    </div>
+                </a>
                 {% endif %}{% endfor %}
         </div>
         <div id="column-right" class="column">
-        {% assign right-column-tag = page.columns[2] %}
+            {% assign right-column-tag = page.columns[2] %}
             <div class="column-head">{{ right-column-tag | capitalize }}</div>
-                {% for project in site.projects %}{% if project.tags contains right-column-tag %}
-                    <a href="{{ project.url }}" class="project-link">
-                        <div class="project">
-                            <h3>{{ project.title }}</h3>
-                            <p>{{ project.description }}</p>
-                        </div>
-                    </a>
-                {% endif %}{% endfor %}
-            </div>
+            {% for project in site.projects %}{% if project.tags contains right-column-tag %}
+                <a href="{{ project.url }}" class="project-link">
+                    <div class="project">
+                        <h3>{{ project.title }}</h3>
+                        <p>{{ project.description }}</p>
+                    </div>
+                </a>
+            {% endif %}{% endfor %}
+        </div>
     </div>
     <h1 style="font-family:cursive">WORK IN PROGRESS</h1>
 </body>
