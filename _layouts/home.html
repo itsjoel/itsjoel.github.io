@@ -13,7 +13,21 @@
 
 <body>
     <header id="website-header">
-        <h1 id="website-title"><span class="start-vis">i</span><span class="start-hid">I</span><span>t</span><span class="start-hid">&rsquo;</span><span>s</span><span class="start-hid">&nbsp;</span><span class="start-vis">j</span><span class="start-hid">J</span><span>o</span><span>e</span><span>l</span><span class="start-vis">.</span><span class="start-hid">,</span><span class="start-hid">&nbsp;</span><span class="start-vis">o</span><span class="start-hid">O</span><span>n</span><span>l</span><span>i</span><span>n</span><span>e</span>
+        <h1 id="website-title">
+            <span class="start-vis">i</span>
+            <span class="start-hid">I</span>
+            <span>t</span>
+            <span class="start-hid">&rsquo;</span>
+            <span>s</span>
+            <span class="start-hid">&nbsp;</span>
+            <span class="start-vis">j</span>
+            <span class="start-hid">J</span>
+            <span>oel</span>
+            <span class="start-vis">.</span>
+            <span class="start-hid">,&nbsp;</span>
+            <span class="start-vis">o</span>
+            <span class="start-hid">O</span>
+            <span>nline</span>
         </h1>
         <p class="subtitle">{{ page.subtitle }}</p>
         <p class="underline">========================</p>
@@ -30,36 +44,36 @@
             {% assign left-column-tag = page.columns[0] %}
             <div class="column-head">{{ left-column-tag | capitalize }}</div>
             {% for project in site.projects %}{% if project.tags contains left-column-tag %}
-                <a href="{{ project.url }}" class="project-link">
-                    <div class="project">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.description }}</p>
-                    </div>
-                </a>
+            <a href="{{ project.url }}" class="project-link">
+                <div class="project">
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.description }}</p>
+                </div>
+            </a>
             {% endif %}{% endfor %}
         </div>
         <div id="column-center" class="column">
             {% assign center-column-tag = page.columns[1] %}
             <div class="column-head">{{ center-column-tag | capitalize }}</div>
             {% for project in site.projects %}{% if project.tags contains center-column-tag %}
-                <a href="{{ project.url }}" class="project-link">
-                    <div class="project">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.description }}</p>
-                    </div>
-                </a>
-                {% endif %}{% endfor %}
+            <a href="{{ project.url }}" class="project-link">
+                <div class="project">
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.description }}</p>
+                </div>
+            </a>
+            {% endif %}{% endfor %}
         </div>
         <div id="column-right" class="column">
             {% assign right-column-tag = page.columns[2] %}
             <div class="column-head">{{ right-column-tag | capitalize }}</div>
             {% for project in site.projects %}{% if project.tags contains right-column-tag %}
-                <a href="{{ project.url }}" class="project-link">
-                    <div class="project">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.description }}</p>
-                    </div>
-                </a>
+            <a href="{{ project.url }}" class="project-link">
+                <div class="project">
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.description }}</p>
+                </div>
+            </a>
             {% endif %}{% endfor %}
         </div>
     </div>
