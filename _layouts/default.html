@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans|Concert+One|Space+Mono:400,400i,700,700i" rel="stylesheet">
+    <link href="/assets/style/style.css" rel="stylesheet">
+    <link href="/assets/style/python-story-lib.css" rel="stylesheet">
+    <title>{{ page.title }} | {{ site.title }}</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/index.html" class="inline-link">&lt;- Back to Main Page</a>
+    </nav>
+    <article class="project-description">
+        <header>
+            <h2 id="website-title">{{ page.title }}</h2>
+            <p class="subtitle">{{ page.subtitle }}</p>
+            <p class="underline">========================</p>
+        </header>
+        <div class="content">
+            {{ content }}
+        </div>
+    </article>
+</body>
+
+</html>
