@@ -53,6 +53,26 @@ $background_color_2: transparent;
 /* body {
         color: red !important;
     } */
+.start-hid {
+    visibility: visible;
+    display: inline-block;
+    width: 0;
+    opacity: 0;
+    animation-name: title-appear;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.start-vis {
+    visibility: visible;
+    display: inline-block;
+    animation-name: title-disappear;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
 body {
 	padding-bottom: 130px;
 	transition: 0.25s;
@@ -169,27 +189,7 @@ h2 {
 .underline {
 	text-align: center;
 }
-.start-hid {
-	display: inline-block;
-	visibility: visible;
-	display: inline-block;
-	opacity: 0;
-	animation-name: title-appear;
-	animation-delay: 1s;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-in-out;
-}
-.start-vis {
-	display: inline-block;
-	visibility: visible;
-	display: inline-block;
-	animation-name: title-disappear;
-	animation-delay: 1s;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-in-out;
-}
+
 strong {
 	font-weight: 600;
 }
