@@ -10,16 +10,17 @@ $font_family_3: "Work Sans", sans-serif;
 $font_family_4: "Space Mono", fantasy;
 $background_color_1: white;
 $background_color_2: transparent;
-
 body {
 	padding-bottom: 130px;
 	transition: 0.25s;
 }
+
 #website-header {
 	font-family: $font_family_1;
 	text-align: center;
 	padding-bottom: 7px;
 }
+
 #website-title {
 	font-family: $font_family_1;
 	font-size: calc(1em + 4vw);
@@ -27,6 +28,7 @@ body {
 	font-weight: 700;
 	margin-bottom: -25px;
 }
+
 .enthusiastic {
 	font-family: $font_family_2;
 	font-weight: 400;
@@ -34,6 +36,7 @@ body {
 	color: $color_1;
 	margin-top: -100vw;
 }
+
 #intro {
 	text-align: center;
 	display: block;
@@ -43,14 +46,17 @@ body {
 	max-width: 900px;
 	margin: auto;
 }
+
 #layout-columns {
 	max-width: 1000px;
 	margin: 0 auto;
 }
+
 .column {
 	width: 33%;
 	float: left;
 }
+
 .column-head {
 	color: $color_2;
 	display: block;
@@ -71,6 +77,13 @@ body {
 		box-shadow: 1.75px 6px 10px rgb(61, 61, 61);
 	}
 }
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 .project-card {
 	display: block;
 	text-align: center;
@@ -103,6 +116,7 @@ body {
 		word-wrap: break-word;
 	}
 }
+
 a {
 	div {
 		&:hover.project-card {
@@ -110,12 +124,14 @@ a {
 		}
 	}
 }
+
 h2 {
 	font-family: $font_family_4;
 	font-size: 2.5em;
 	text-align: center;
 	margin-bottom: -20px;
 }
+
 .underline {
 	text-align: center;
 }
@@ -123,6 +139,7 @@ h2 {
 strong {
 	font-weight: 600;
 }
+
 @media all and (max-width: 440px) {
 	#website-title {
 		font-size: 8vw;
