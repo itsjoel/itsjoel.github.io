@@ -83,12 +83,15 @@ body {
 	clear: both;
 	display: table;
 }
-
+.project-list {
+	list-style:none;
+	padding-left:0;
+}
 .project-card {
 	display: block;
 	text-align: center;
 	background-color: $background_color_1;
-	width: calc(90% - 12px);
+	width: 90%;
 	margin: 0 auto;
 	box-shadow: 1px 3px 5px gray;
 	margin-top: 15px;
@@ -118,8 +121,8 @@ body {
 }
 
 a {
-	div {
-		&:hover.project-card {
+	.project-card {
+		&:hover {
 			box-shadow: 3px 5px 9px rgb(124, 124, 124);
 		}
 	}
