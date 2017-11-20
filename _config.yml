@@ -8,3 +8,5 @@ kramdown:
 collections:
   projects:
     output: true
+
+highlighter: rouge

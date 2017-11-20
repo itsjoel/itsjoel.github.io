@@ -15,6 +15,10 @@ Making a Python-based branching-path story is a common task for those learning p
 
 The issue was that the Python story I had _already_ written last year already had all those features, and I didn't want to do the same thing again this year. So, I decided to take on a bigger challenge, and make an object-oriented Python module for writing these kind of stories.
 
+### Development
+
+I made the module over the course of a few weeks in Computer Science class. I started with a basic script that formatted text with `termcolor` using tokens like `#`, `@`, and `%`. Then, I built it in a class called `story()` that could take a string as an argument, format it using that script, then print it out later, when a method was called on it. I built a `decision()` class that could take a list of possible choices, and had a method that prompted the user and didn't stop until it got an answer that fuzzy-matched one of the possible choices. I consolidated their similar properties into a class called `point()` that both inherited from. Then, I had both call the next function in the 
+
 ##  Usage
 
 *The following is a guide to usage of this module. For less verbose docs, check the linked GitHub repo when it is ready.*
