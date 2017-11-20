@@ -40,8 +40,21 @@ In order to start the story, there must be a valid `start_point`. This can be se
 
 In order for a story to be a story, it has to have content. In this package, that comes in the form of points, either *story points* or *decision points*.
 
-#### Story Points
+#### Story Points - the `story()` object
 
 Story points are parts of a branched-path story that don't have any choices for the reader in them. They just show their content, then go to the designated next point in the story. In a flow chart, they'd be nodes that have either one or no arrows going to any other node.
 
-In this package, they take 
+In this package, they are represented by the `story()` object. It takes arguments:
+
+1. `text`, which covers the content of this point in the story. This is formatted using a system described later in this documentation. 
+2. `next_point`, which is the name, as listed in the `points` dictionary, of the next point in the story. 
+
+#### Decision Points - the `decision()` object
+
+Decision points are a little more complicated. They are represented by the `decision()` object. It takes arguments
+
+1. `text`, which, like in the `story()` object, is formatted using a system described later in this documentation.
+2. `options`, a dictionary containing every option in this decision point that the player has to choose from, and what point to go to depending which option they choose. This is in this form: `{'NAME_OF_OPTION_IN_CAPS': 'name of story point to go to if this decision is chosen',...}`. **important**: every option that the player has should start with a different letter to reduce errors in fuzzy matching. 
+
+The fuzzy 
+
