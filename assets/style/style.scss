@@ -2,66 +2,71 @@ body {
     color: black;
     background-color: rgb(250, 242, 231);
     word-wrap: normal;
-}
-
-.subtitle {
+  }
+  
+  .subtitle {
     font-family: "Space Mono", monospace;
     font-size: 1em;
     font-style: italic;
     font-weight: 400;
     color: gray;
     margin-bottom: -15px;
-}
-
-.underline {
+  }
+  
+  .underline {
     font-family: "Space Mono", monospace;
     font-weight: 400;
     color: gray;
     margin-bottom: 25px;
-}
-
-h2 {
+  }
+  
+  h1 {
+    font-family: "Space Mono", monospace;
+    font-size: 5em;
+    margin-bottom: -10px;
+    line-height: 1.25em;
+  }
+  
+  h2 {
     font-family: "Space Mono", fantasy;
     font-size: 2.5em;
-    margin-bottom: -20px;
-}
-
-a {
+    line-height: 0em;
+  }
+  
+  a {
     text-decoration: none;
-}
-
-.inline-link {
+  }
+  
+  .inline-link {
     font-family: "Space Mono", monospace;
     text-decoration: underline;
     font-style: italic;
     color: darkblue;
-}
-
-.inline-link:hover {
-    font-style: Normal;
-}
-
-article {
+    &:hover {
+      font-style: Normal;
+    }
+  }
+  
+  article {
     display: block;
     max-width: 1000px;
     margin: 0 auto;
-}
-
-article .content {
-    background-color: white;
-    margin-top: -30px;
-    padding: 20px;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.25em;
-    line-height: 1.5em;
-    box-shadow: 1px 1px 3px rgb(66, 66, 66);
-}
-
-article .content p {
-    max-width: 800px;
-    margin: 0 auto;
-}
-code {
+    .content {
+      background-color: white;
+      margin-top: -30px;
+      padding: 20px;
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.25em;
+      line-height: 1.5em;
+      box-shadow: 1px 1px 3px rgb(66, 66, 66);
+      p {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  code {
     background-color: rgba(220, 220, 220, 0.5);
     border-bottom-color: rgb(51, 51, 51);
     border-bottom-left-radius: 2px;
@@ -99,8 +104,4 @@ code {
     padding-left: 2px;
     padding-right: 2px;
     padding-top: 0px;
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-}
+  }
