@@ -2,10 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600,700|Concert+One|Space+Mono:400,400i,700,700i"
-        rel="stylesheet">
-    <link href="/assets/style/style.css" rel="stylesheet">
+    {% include head.html %}
     <link href="/assets/style/home.css" rel="stylesheet">
     <title>{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,12 +15,10 @@
         <p class="underline">=======================</p>
     </header>
     {{ content }}
-    <div id="project-header">
-        <h2>
+        <h2 class="blog section-header">
             My Projects
         </h2>
         <p class="underline">========================</p>
-    </div>
     <div id="layout-columns" class="clearfix">
         {% for column-name in page.columns %}
         <div class="column">
@@ -42,7 +37,7 @@
         </div>
         {% endfor %}
     </div>
-    <h2 My Blog>My Blog</h2>
+    <h2 class="blog section-header">My Blog</h2>
     <p class="underline">========================</p>
     <ol class="blog-list">
     {% for post in site.posts %}
@@ -54,12 +49,12 @@
         {{ post.excerpt | strip_html | truncatewords: 20, '...' }}
         </p>
         <ul class="tag-list">
-        <h6>Tags:
-        {% for tags in post.tags %}
+            {% for tags in post.tags %}
             <li class="tag">{{ tags }}</li>
             {% endfor %}
-            </li>
-    </h6>
+        </ul>
+        </li>
+    </a>
     {% endfor %}
     </ol>
     <h1 style="font-family:cursive">WORK IN PROGRESS</h1>

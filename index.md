@@ -1,7 +1,7 @@
 ---
-title: It's Joel, Online
+title: It’s Joel, Online
 
-subtitle: Joel Newman's Personal Site and Portfolio <3
+subtitle: Joel Newman’s Personal Site and Portfolio <3
 
 layout: home
 
