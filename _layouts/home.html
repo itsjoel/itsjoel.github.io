@@ -28,14 +28,17 @@
         {% for column-name in page.columns %}
         <div class="column">
             <div class="column-head">{{ column-name | capitalize }}</div>
-            {% for project in site.projects %}{% if project.tags contains column-name %}
-            <a href="{{ project.url }}" class="project-link">
-                <div class="project-card">
-                    <h3>{{ project.title }}</h3>
-                    <p>{{ project.description }}</p>
-                </div>
-            </a>
-            {% endif %}{% endfor %}
+            <ol class="project-list">
+                {% for project in site.projects %}{% if project.tags contains column-name %}
+                <a href="{{ project.url }}" class="project-link">
+                    <li class="project-card">
+                        <h3>{{ project.title }}</h3>
+                        <p>{{ project.description }}</p>
+                    </li>
+                </a>
+
+                {% endif %}{% endfor %}
+            </ol>
         </div>
         {% endfor %}
     </div>
