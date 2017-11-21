@@ -39,6 +39,21 @@
         </div>
         {% endfor %}
     </div>
+    <h2 My Blog>My Blog</h2>
+    <p class="underline">========================</p>
+    <ul>
+    {% for post in site.posts %}
+    <li>
+    <a href="{{ post.url }}">
+        <div class="blog">
+        <h3>{{ post.title }}</h3>
+        <p>
+        {{ post.excerpt | strip_html | truncatewords: 50, '...' }}
+        </p>
+        </div>
+    </li>
+    {% endfor %}
+    </ul>
     <h1 style="font-family:cursive">WORK IN PROGRESS</h1>
 </body>
 

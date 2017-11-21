@@ -139,7 +139,10 @@ h2 {
 strong {
 	font-weight: 600;
 }
-
+.blog {
+	background-color: $background_color_1;
+	padding: 10px
+}
 @media all and (max-width: 440px) {
 	#website-title {
 		font-size: 8vw;
