@@ -10,6 +10,7 @@ $font_family_3: "Work Sans", sans-serif;
 $font_family_4: "Space Mono", fantasy;
 $background_color_1: white;
 $background_color_2: transparent;
+$card_padding: 6px;
 body {
 	padding-bottom: 130px;
 	transition: 0.25s;
@@ -67,8 +68,9 @@ body {
 	width: 90%;
 	padding-top: 2vw;
 	padding-bottom: 2vw;
+	padding-left: $card_padding;
+	padding-right: $card_padding;
 	margin: 0 auto;
-	border: 1px solid white;
 	box-shadow: 1.25px 4px 6px rgb(77, 77, 77);
 	transition: 0.2s;
 	text-decoration: underline;
@@ -83,16 +85,21 @@ body {
 	clear: both;
 	display: table;
 }
-
+.project-list {
+	list-style:none;
+	width: 100%;
+	margin: auto;
+	padding-left: 0;
+}
 .project-card {
 	display: block;
 	text-align: center;
 	background-color: $background_color_1;
-	width: calc(90% - 12px);
-	margin: 0 auto;
+	width: 90%;
+	margin: auto;
 	box-shadow: 1px 3px 5px gray;
 	margin-top: 15px;
-	padding: 6px;
+	padding: $card_padding;
 	transition: 0.2s;
 	h3 {
 		font-family: $font_family_1;
@@ -119,8 +126,8 @@ body {
 
 
 a {
-	div {
-		&:hover.project-card {
+	.project-card {
+		&:hover {
 			box-shadow: 3px 5px 9px rgb(124, 124, 124);
 		}
 	}
@@ -162,11 +169,12 @@ strong {
 		background-color: $background_color_2;
 		box-shadow: none;
 		border: none;
+		padding-left: 6px;
 		margin-bottom: -20px;
 	}
 	.project-card {
-		padding: 10px;
-		width: 85%;
+		padding: 6px;
+		width: 90%;
 		h3 {
 			font-size: 7vw;
 		}
