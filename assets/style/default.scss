@@ -1,0 +1,56 @@
+---
+---
+
+//start content
+$font_family_1: "Space Mono", monospace;
+
+.tag-list {
+	list-style:none;
+	width: 100%;
+	margin: auto;
+	padding-left: 0;
+	h6 {
+		font-size: 0.75em;
+		font-family: $font_family_1;
+	}
+	.tag {
+		display: inline-block;
+		background-color: rgba(220, 220, 220, 0.5);
+		border-bottom-color: rgb(51, 51, 51);
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;
+		border-bottom-style: none;
+		border-bottom-width: 0px;
+		border-image-outset: 0;
+		border-image-repeat: stretch stretch;
+		border-image-slice: 100%;
+		border-image-source: none;
+		border-image-width: 1;
+		border-left-color: rgb(51, 51, 51);
+		border-left-style: none;
+		border-left-width: 0px;
+		border-right-color: rgb(51, 51, 51);
+		border-right-style: none;
+		border-right-width: 0px;
+		border-top-color: rgb(51, 51, 51);
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		border-top-style: none;
+		border-top-width: 0px;
+		box-decoration-break: clone;
+		color: rgb(51, 51, 51);
+		font-family: "Space Mono", monospace;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		overflow-wrap: break-word;
+		padding-bottom: 0px;
+		padding-left: 2px;
+		padding-right: 2px;
+		padding-top: 0px;
+	}
+}

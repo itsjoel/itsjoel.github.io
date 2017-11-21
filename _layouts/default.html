@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,400i,700,700i|Concert+One|Space+Mono:400,400i,700,700i" rel="stylesheet">
     <link href="/assets/style/style.css" rel="stylesheet">
     <link href="/assets/style/python-story-lib.css" rel="stylesheet">
+    <link href="/assets/style/default.css" rel="stylesheet">    
     <link href="/assets/style/syntax.css" rel="stylesheet">
     <title>{{ page.title }} | {{ site.title }}</title>
 </head>
@@ -18,6 +19,14 @@
             </nav>
             <h1 id="website-title">{{ page.title }}</h1>
             <p class="subtitle">{{ page.description }}</p>
+            <ul class="tag-list">
+                <h6>Tags:
+                {% for tags in page.tags %}
+                    <li class="tag">{{ tags }}</li>
+                    {% endfor %}
+                    </li>
+                </h6>
+                </ul>
             <p class="underline">========================</p>
         </header>
         <div class="content">
