@@ -1,5 +1,11 @@
 <div id="overlay" onclick="overlay_off()">
-    <h1 style="color:white; text-align:center; text-shadow: 1px, 1px, 5px, black;">Work In Progress</h1>
+    <div class="warning_box">
+    <h1 style="">Work In Progress</h1>
+    <p class="underline">========================</p>
+    <p class="wip_warning">
+        This site is a work in progress. A lot of the data is placeholder. If this were a more important production, I would not put this up before it was finished. However, because this is kind of for fun, I decided that it would be fine to put an unfinished version up. 👍
+    </p>
+    </div>
 </div>
 <script>
     window.addEventListener("load", overlay_if_not_visited(), false);
@@ -36,9 +42,7 @@
     }
 
     function overlay_if_not_visited() {
-        console.error(getCookie("visited"));
         var is_visited = getCookie("visited") !== "yes"
-        console.error(is_visited);
         if (is_visited) {
             overlay_on();
             setCookie("visited", "yes");
