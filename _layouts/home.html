@@ -7,8 +7,8 @@
     <title>{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-<body>
+<body onload="overlay_if_not_visited()">
+    {% include wip_overlay.html %}
     <header id="website-header">
         <h1 id="website-title">{{ page.title }}</h1>
         <p class="subtitle">{{ page.subtitle }}</p>
