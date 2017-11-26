@@ -122,3 +122,32 @@ body {
         }
     }
 }
+.blog-list {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    .blog-card {
+        width: 90%;
+        background-color: $color-card-bg;
+        max-width: 1000px;
+        padding: 10px;
+        margin: auto;
+        box-shadow: $shadow-card;
+        .blog-card-content {
+            max-width: 900px;
+            color: $color-text;
+            padding: 30px 10px 20px 10px;
+            margin: auto;
+            .blog-card-title {
+                font-size: 2.25em;
+                font-family: $font-head-mono;
+                margin: auto;
+            }
+            .blog-card-description {
+                font-size: 1.25em;
+                font-family: $font-body-sans;
+                margin: auto;
+            }
+        }
+    }
+}

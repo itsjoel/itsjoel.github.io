@@ -26,11 +26,16 @@ h1, h2 {
     }
     .article-subtitle, .underline {
         font-family: $font-head-mono;
+        margin: 0;
         color: rgb(66,66,66);
+    }
+    .article-subtitle {
+        font-style: italic;
     }
     nav {
         .back-link {
             position:relative;
+            margin: 0 0 -50px 30px;
             font-family: $font-head-mono;
             z-index: 1;
             color: $color-accent;
