@@ -1,203 +1,79 @@
 ---
---- 
+---
 
-// start content
-$header_font_mono: "Space Mono", monospace;
-$header_font_disp: "Concert One", monospace;
-$body_font_sans: "Work Sans", sans-serif;
+@import "variables";
+@import "code";
+@import "blockquote";
+@import "overlay";
+
 body {
-    color: black;
-    background-color: rgb(250, 242, 231);
-    word-wrap: normal;
+    background-color: $color-site-bg;
 }
 
-.subtitle {
-    font-family: $header_font_mono;
-    font-size: 1.25em;
-    font-style: italic;
-    font-weight: 400;
-    color: gray;
-    line-height: 1.25em;
-    margin-bottom: 7px;
-    margin: 0;
-    word-break: normal;
+h1, h2 {
+    font-family: $font-head-mono;   
 }
-
-.underline {
-    font-family: $header_font_mono;
-    font-weight: 400;
-    color: gray;
-    margin-bottom: 25px;
-}
-
-h1 {
-    font-family: $header_font_mono;
-}
-
-h2 {
-    font-family: $header_font_mono;
-    font-size: 2.5em;
-}
-
-a {
-    text-decoration: none;
-}
-
-.inline-link {
-    font-family: $header_font_mono;
-    text-decoration: underline;
-    font-style: italic;
-    color: darkblue;
-    &:hover {
-        font-style: Normal;
-    }
-}
-
-
-
-article {
-  display: block;
-  max-width: 1000px;
-  margin: 0 auto;
-  h1 {
-    font-size: calc(2em + 4vw);
-    line-height: 1em;
-    margin: 0;
-    word-break: break-all;
-    
-  }
-  .content {
-    background-color: white;
-    margin-top: -30px;
-    padding: 20px;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.25em;
-    box-shadow: 1px 1px 3px rgb(66, 66, 66);
-    p {
-      line-height: 1.5em;
-      max-width: 800px;
-      margin: auto;
-      margin-top: 0.25em;
-      margin-bottom: 0.25em;
-    }
-    h1, h2, h3, h4, h5, h6, h7, h8, h9 {
-      line-height: 1.5em;
-      max-width: 850px;
-      margin: 0 auto;
-      margin-top: 1.25em;
-      margin-bottom: 0em;
-    }
-    ol, ul {
-      max-width: 750px;
-      line-height: 1.5em;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      margin: 0 auto;
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-  }
-}
-
-#overlay {
-    position: fixed;
-    /* Sit on top of the page content */
-    display: none;
-    /* Hidden by default */
-    width: 100%;
-    /* Full width (cover the whole page) */
-    height: 100%;
-    /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    /* Black background with opacity */
-    z-index: 2;
-    /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer;
-    /* Add a pointer on hover */
-    color: black;
-    text-align: center;
-    h1 {
-        margin-top: 0px;
-        margin-bottom: 20px;
-        line-height: 1em;
-        font-size: calc(1vw + 3em);
-    }
-    .warning_box {
-        padding: 25px;
-        margin-top: 25px;
-        background-color: rgb(255, 255, 255);
-        width: 50%;
-        max-width: 1000px;
-        min-width: 300px;
-        display: inline-block;
-        box-shadow: 6px 6px 10px rgb(0, 0, 0);
-    }
-    .wip_warning {
-        font-family: 'Work Sans';
-        font-size: 1.5em;
-    }
-}
-
-
-/*https://stackoverflow.com/questions/11093233/how-to-support-scrolling-when-using-pygments-with-jekyll*/
-
-pre {
-    white-space: pre;
-    overflow: auto;
-}
-
-
-/* copied straight from mozilla's styles :^) */
-
-code {
-    background-color: rgba(220, 220, 220, 0.5);
-    border-bottom-color: rgb(51, 51, 51);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-bottom-style: none;
-    border-bottom-width: 0px;
-    border-image-outset: 0;
-    border-image-repeat: stretch stretch;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-width: 1;
-    border-left-color: rgb(51, 51, 51);
-    border-left-style: none;
-    border-left-width: 0px;
-    border-right-color: rgb(51, 51, 51);
-    border-right-style: none;
-    border-right-width: 0px;
-    border-top-color: rgb(51, 51, 51);
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-top-style: none;
-    border-top-width: 0px;
-    box-decoration-break: clone;
-    color: rgb(51, 51, 51);
-    font-family: consolas, "Liberation Mono", monospace;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    overflow-wrap: break-word;
-    padding-bottom: 0px;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 0px;
-}
-
-blockquote {
+.article-header {
+    max-width: 1100px;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 700px;
-    padding-left: 15px;
-    border-left: 3px solid #ccc;
+    .article-title { 
+        font-size: calc(3.5em + 2vw);
+        line-height: calc(1em + 1vw);
+        margin: 0;
+        word-wrap: break-word;
+        z-index: 0;
+    }
+    .article-subtitle, .underline {
+        font-family: $font-head-mono;
+        color: rgb(66,66,66);
+    }
+    nav {
+        .back-link {
+            position:relative;
+            font-family: $font-head-mono;
+            z-index: 1;
+            color: $color-accent;
+            font-style: italic;
+        &:hover {
+            font-style: normal;
+        }
+        }
+    }
+}
+.article-body {
+    font-family: $font-body-sans;
+    font-size: $fontsize-body;
+    background-color: $color-body-bg;
+    padding: $padding-body;
+    box-shadow: $shadow-body;
+    max-width: $maxwidth-body;
+    margin: auto;
+    .article-content {
+        max-width: $maxwidth-content;
+        padding: 10px;
+        margin: auto;
+    }
+    p {
+        line-height: $lineheight-body;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-left: -15px;
+        margin-bottom: -10px;
+        line-height: 1em;
+    }
+    h2 {
+        font-size: $fontsize-body-h2;
+    }
+    h3 {
+        font-size: $fontsize-body-h3;
+    }
+    h4 {
+        font-size: $fontsize-body-h4;
+    }
+    h5 {
+        font-size: $fontsize-body-h5;
+    }
+    h6 {
+        font-size: $fontsize-body-h6;
+    }
 }
