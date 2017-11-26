@@ -6,6 +6,9 @@
 @import "overlay";
 $project-card-width: 96%;
 $project-card-padding: 6px;
+body {
+    transition: 0.25s;
+}
 .website-header {
     text-align: center;
     font-family: $font-head-mono;
@@ -35,9 +38,9 @@ $project-card-padding: 6px;
 }
 .intro-text {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.75em;
     font-family: $font-body-sans;
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     p {
         margin: auto;
@@ -70,11 +73,11 @@ $project-card-padding: 6px;
         .column-head {
             margin: auto;
             width: $project-card-width;
-            padding-top: 2vw;
-            padding-bottom: 2vw;
+            padding-top: 1.5vw;
+            padding-bottom: 1.5vw;
             box-shadow: $shadow-headcard;
             font-family: $font-head-disp;
-            font-size: calc(0.4em + 2.5vw);
+            font-size: calc(0.4em + 2vw);
             text-decoration: underline;
             text-decoration-style: wavy;
             text-align: center;
@@ -89,6 +92,7 @@ $project-card-padding: 6px;
             text-align: center;
         }
         .project-card {
+            transition: 0.1s;
             display: inline-block;
             width: $project-card-width;
             color: black;
@@ -106,6 +110,14 @@ $project-card-padding: 6px;
                 margin-left: $project-card-padding;
                 margin-right: $project-card-padding;
                 font-family: $font-body-sans;
+            }
+        }
+        .project-link:hover > .project-card {
+            transition: 0.2s;
+            box-shadow: 3px 5px 9px dimgray;
+            .project-title {
+                font-style: normal;
+                color: $color-accent;
             }
         }
     }
