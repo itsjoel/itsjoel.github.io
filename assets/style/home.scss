@@ -1,24 +1,28 @@
+--- 
 ---
----
+
 @import "variables";
 @import "code";
 @import "blockquote";
 @import "overlay";
 $project-card-width: 96%;
 $project-card-padding: 6px;
-body {
-    transition: 0.25s;
+$shadow-card-hover: 3px 5px 9px dimgray;
+* {
+    transition: all 0.2s ease;
 }
+
 .website-header {
     text-align: center;
     font-family: $font-head-mono;
-    margin-top: calc( 0.5em + 4vw );
+    margin-top: calc( 0.5em + 4vw);
     .website-title {
         font-size: calc(1.25em + 4.25vw);
         line-height: calc((1.25em + 4.25vw) * 0.45);
         margin: 0;
     }
-    .subtitle, .underline {
+    .subtitle,
+    .underline {
         color: gray;
     }
     .subtitle {
@@ -26,8 +30,8 @@ body {
         font-style: italic;
         font-size: calc(0.8em + 0.35vw);
     }
-    
 }
+
 .underline {
     font-family: $font-head-mono;
     text-align: center;
@@ -36,6 +40,7 @@ body {
     line-height: 5px;
     margin: 0;
 }
+
 .intro-text {
     text-align: center;
     font-size: 1.75em;
@@ -51,11 +56,13 @@ body {
         margin: 20px auto 20px auto;
     }
 }
+
 .section-header {
     text-align: center;
     font-size: 3em;
     margin-bottom: -5px;
 }
+
 .layout-columns {
     margin: auto;
     margin-top: 10px;
@@ -85,7 +92,7 @@ body {
             color: $color-accent;
         }
         .project-list {
-            list-style:none;
+            list-style: none;
             width: 100%;
             margin: auto;
             padding-left: 0;
@@ -100,6 +107,7 @@ body {
             margin: 20px 0 0;
             box-shadow: $shadow-card;
             .project-title {
+                word-wrap: break-word;
                 font-family: $font-head-mono;
                 font-style: italic;
                 text-decoration: underline;
@@ -112,9 +120,9 @@ body {
                 font-family: $font-body-sans;
             }
         }
-        .project-link:hover > .project-card {
+        .project-link:hover>.project-card {
             transition: 0.2s;
-            box-shadow: 3px 5px 9px dimgray;
+            box-shadow: $shadow-card-hover;
             .project-title {
                 font-style: normal;
                 color: $color-accent;
@@ -122,17 +130,32 @@ body {
         }
     }
 }
+
 .blog-list {
     list-style: none;
     width: 100%;
     padding: 0;
+    .blog-link {
+        z-index: 1;
+        &:hover {
+            .blog-card {
+                box-shadow: $shadow-card-hover;
+                transition: 0.2s;
+            }
+            .blog-card-title {
+                color: $color-accent;
+                text-decoration: underline;
+            }
+        }
+    }
     .blog-card {
-        width: 90%;
         background-color: $color-card-bg;
-        max-width: 1000px;
+        width: 96%;
+        max-width: 980px;
         padding: 10px;
         margin: auto;
         box-shadow: $shadow-card;
+        transition: 0.1s;
         .blog-card-content {
             max-width: 900px;
             color: $color-text;
@@ -147,6 +170,43 @@ body {
                 font-size: 1.25em;
                 font-family: $font-body-sans;
                 margin: auto;
+            }
+        }
+        &::hover {
+            box-shadow: $shadow-card-hover;
+            transition: 0.2s;
+        }
+    }
+}
+
+@media all and (max-width: 460px) {
+    /* Using !important so my styles aren't dependent on specificity */
+    body {
+        border: 1px solid red;
+    }
+    .website-title {
+        font-size: 8vw !important;
+    }
+    .column {
+        width: 100% !important;
+        .column-head {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            margin: 10px 0 5px 0 !important;
+            padding: 0 !important;
+            font-size: 10vw !important;
+        }
+        .project-link:first-child {
+            .project-card {
+                margin: 0 !important;
+            }
+        }
+        .project-card {
+            .project-title {
+                font-size: 8vw !important;
+            }
+            .project-description {
+                font-size: 5vw !important;
             }
         }
     }

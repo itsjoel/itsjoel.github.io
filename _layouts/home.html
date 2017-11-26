@@ -43,18 +43,17 @@
     <p class="underline">========================</p>
     <ol class="blog-list">
     {% for post in site.posts %}
-
-    <a href="{{ post.url }}">
+    <a href="{{ post.url }}" class="blog-link">
     <li class="blog-card card">
         <div class="blog-card-content">
             <h3 class="blog-card-title">{{ post.title }}</h3>
-            
             <p class="blog-card-description">
             {{ post.excerpt | strip_html | truncatewords: 20, '...' }}
             </p>
         </div>
+    </li>
     </a>
-    {% endfor %}
+    {% endfor %}   
     </ol>
 </body>
 
