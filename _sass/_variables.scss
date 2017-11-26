@@ -1,0 +1,34 @@
+//FONTS
+//header fonts
+$font-head-mono: "Space Mono", "Courier New", Courier, monospace;
+$font-head-disp: "Concert One", Futura, Helvetica, Arial, sans-serif;
+//body fonts
+$font-body-sans: "Work Sans", Verdana, Geneva, sans-serif;
+$font-body-serif: serif; //placeholder for now
+$font-body-code: consolas, "Liberation Mono", monospace; //stolen from mozilla website style for now
+//body size
+$fontsize-body: 1.35em;
+$fontsize-body-h2: 2.25em;
+$fontsize-body-h3: 1.5em;
+$fontsize-body-h4: 1.25em;
+$fontsize-body-h5: 1.25em;
+$fontsize-body-h6: 1.25em;
+$lineheight-body: 1.5em;
+//COLORS
+//backgrounds
+$color-site-bg: #faf2e7; //rgb(250, 242, 231);
+$color-body-bg: white;
+$color-card-bg: white;
+$color-overlay-bg: black;
+//other stuff
+$color-text: black;
+$color-accent: darkblue;
+
+//OTHER STUFF
+$padding-body: 10px 20px 30px 20px;
+$shadow-body: 1px 1px 3px grey;
+$shadow-headcard: 1.25px 4px 6px dimgray;
+$shadow-card: 1px 3px 5px gray;
+$maxwidth-body: 1000px;
+$maxwidth-content: 820px;
+$maxwidth-content-h: 900px;

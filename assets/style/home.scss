@@ -1,232 +1,213 @@
+--- 
 ---
----
 
-// start content
-$color_1: black;
-$color_2: darkblue;
-$font_family_1: "Space Mono", monospace;
-$font_family_2: "Concert One", monospace;
-$font_family_3: "Work Sans", sans-serif;
-$font_family_4: "Space Mono", fantasy;
-$background_color_1: white;
-$background_color_2: transparent;
-$card_padding: 6px;
-body {
-	padding-bottom: 130px;
-	transition: 0.25s;
+@import "variables";
+@import "code";
+@import "blockquote";
+@import "overlay";
+$project-card-width: 96%;
+$project-card-padding: 6px;
+$shadow-card-hover: 3px 5px 9px dimgray;
+* {
+    transition: all 0.2s ease;
 }
 
-#website-header {
-	font-family: $font_family_1;
-	text-align: center;
-	padding-bottom: 7px;
-}
-
-#website-title {
-	font-family: $font_family_1;
-	font-size: calc(1em + 4vw);
-	font-style: normal;
-	font-weight: 700;
-	margin-bottom: -25px;
-}
-
-.enthusiastic {
-	font-family: $font_family_2;
-	font-weight: 400;
-	font-size: 3em;
-	color: $color_1;
-	margin-top: -100vw;
-}
-
-#intro {
-	text-align: center;
-	display: block;
-	font-family: $font_family_3;
-	font-weight: 400;
-	font-size: 1.75em;
-	max-width: 900px;
-	margin: auto;
-}
-
-#layout-columns {
-	max-width: 1000px;
-	margin: 0 auto;
-	margin-top: 10px;
-}
-
-.column {
-	width: 33%;
-	float: left;
-}
-
-.column-head {
-	color: $color_2;
-	display: block;
-	text-align: center;
-	font-family: $font_family_2;
-	font-size: calc(2vw + 0.4em);
-	background-color: $background_color_1;
-	width: 90%;
-	padding-top: 2vw;
-	padding-bottom: 2vw;
-	padding-left: $card_padding;
-	padding-right: $card_padding;
-	margin: 0 auto;
-	box-shadow: 1.25px 4px 6px rgb(77, 77, 77);
-	transition: 0.2s;
-	text-decoration: underline;
-	text-decoration-style: wavy;
-	&:hover {
-		box-shadow: 1.75px 6px 10px rgb(61, 61, 61);
-	}
-}
-
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-.project-list {
-	list-style:none;
-	width: 100%;
-	margin: auto;
-	padding-left: 0;
-}
-.blog-list {
-	list-style: none;
-	width: 100;
-	padding: 0;
-	color: $color_1;
-	.blog-card {
-		width: 80%;
-		max-width: 900px;
-		margin: auto;
-		margin-bottom: 15px;
-		color: $color_1;
-		background-color: $background_color_1;
-		padding: 10px;
-		box-shadow: 1px 3px 5px gray;
-		h3 {
-			font-family: $font_family_1;
-			font-size: 2.25em;
-			color: $color_1;
-			line-height: 1em;
-			margin-bottom: 10px;
-			margin-left: 30px;
-		}
-		&:hover {
-			h3 {
-				color: $color_2;
-				text-decoration: underline;
-			}
-		}
-		p {
-			margin-left: 30px;
-			margin-right: 30px;
-			font-size: 1.25em;
-			max-width: 750px;
-			font-family: $font_family_3;
-			color: $color_1;
-		}
-	}
-}
-.project-card {
-	display: block;
-	text-align: center;
-	background-color: $background_color_1;
-	width: 90%;
-	margin: auto;
-	box-shadow: 1px 3px 5px gray;
-	margin-top: 15px;
-	padding: $card_padding;
-	transition: 0.2s;
-	h3 {
-		font-family: $font_family_1;
-		color: $color_1;
-		font-size: calc(0.75vw + 1.25em);
-		text-decoration: underline;
-		font-style: italic;
-		line-height: 1em;
-		transition: 0.2s;
-	}
-	&:hover {
-		h3 {
-			font-style: normal;
-			color: $color_2;
-		}
-	}
-	p {
-		font-family: $font_family_3;
-		color: $color_1;
-		font-size: calc(0.75vw + 0.5em);
-		word-wrap: break-word;
-	}
-}
-a {
-	.card {
-		transition: 0.2s;
-		&:hover {
-			box-shadow: 3px 5px 9px rgb(124, 124, 124);
-		}
-	}
-}
-
-h2 {
-	margin-top: 20px;
-	font-family: $font_family_4;
-	font-size: 2.5em;
-	text-align: center;
+.website-header {
+    text-align: center;
+    font-family: $font-head-mono;
+    margin-top: calc( 0.5em + 4vw);
+    .website-title {
+        font-size: calc(1.25em + 4.25vw);
+        line-height: calc((1.25em + 4.25vw) * 0.45);
+        margin: 0;
+    }
+    .subtitle,
+    .underline {
+        color: gray;
+    }
+    .subtitle {
+        margin: 4px;
+        font-style: italic;
+        font-size: calc(0.8em + 0.35vw);
+    }
 }
 
 .underline {
-	text-align: center;
+    font-family: $font-head-mono;
+    text-align: center;
+    color: gray;
+    font-size: 1.1em;
+    line-height: 5px;
+    margin: 0;
 }
 
-strong {
-	font-weight: 600;
+.intro-text {
+    text-align: center;
+    font-size: 1.75em;
+    font-family: $font-body-sans;
+    max-width: 800px;
+    margin: auto;
+    p {
+        margin: auto;
+    }
+    .enthusiastic {
+        font-family: $font-head-disp;
+        font-size: 3em;
+        margin: 20px auto 20px auto;
+    }
 }
+
 .section-header {
-	margin-top: 60px;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: -5px;
 }
-.underline {
-	margin-top: -10px;
-	margin-bottom: -10px;
+
+.layout-columns {
+    margin: auto;
+    margin-top: 10px;
+    max-width: 1000px;
+    text-align: justify;
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .column {
+        float: left;
+        vertical-align: top;
+        width: calc(100% / 3);
+        .column-head {
+            margin: auto;
+            width: $project-card-width;
+            padding-top: 1.5vw;
+            padding-bottom: 1.5vw;
+            box-shadow: $shadow-headcard;
+            font-family: $font-head-disp;
+            font-size: calc(0.4em + 2vw);
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-align: center;
+            background-color: $color-card-bg;
+            color: $color-accent;
+        }
+        .project-list {
+            list-style: none;
+            width: 100%;
+            margin: auto;
+            padding-left: 0;
+            text-align: center;
+        }
+        .project-card {
+            transition: 0.1s;
+            display: inline-block;
+            width: $project-card-width;
+            color: black;
+            background-color: $color-card-bg;
+            margin: 20px 0 0;
+            box-shadow: $shadow-card;
+            .project-title {
+                word-wrap: break-word;
+                font-family: $font-head-mono;
+                font-style: italic;
+                text-decoration: underline;
+                font-size: calc(1vw + 1.35em);
+                margin: 25px $project-card-padding $project-card-padding $project-card-padding;
+            }
+            .project-description {
+                margin-left: $project-card-padding;
+                margin-right: $project-card-padding;
+                font-family: $font-body-sans;
+            }
+        }
+        .project-link:hover>.project-card {
+            transition: 0.2s;
+            box-shadow: $shadow-card-hover;
+            .project-title {
+                font-style: normal;
+                color: $color-accent;
+            }
+        }
+    }
 }
-@media all and (max-width: 440px) {
-	#website-title {
-		font-size: 8vw;
-		line-height: 1em;
-		margin-bottom: -12px;
-		text-align: center;
-	}
-	.column {
-		width: 100% !important;
-		display: inline-block !important;
-	}
-	.column-head {
-		margin-top: 10px;
-		font-size: 9.5vw;
-		background-color: $background_color_2;
-		box-shadow: none;
-		border: none;
-		padding-left: 6px;
-		margin-bottom: -20px;
-	}
-	.section-header {
-		margin-top: 50px;
-	}
-	.underline {
-		margin-top: -15px;
-		margin-bottom: -20px;
-	}
-	.project-card {
-		padding: 6px;
-		width: 90%;
-		h3 {
-			font-size: 7vw;
-		}
-		p {
-			font-size: 1.25em;
-		}
-	}
+
+.blog-list {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    .blog-link {
+        z-index: 1;
+        &:hover {
+            .blog-card {
+                box-shadow: $shadow-card-hover;
+                transition: 0.2s;
+            }
+            .blog-card-title {
+                color: $color-accent;
+                text-decoration: underline;
+            }
+        }
+    }
+    .blog-card {
+        background-color: $color-card-bg;
+        width: 96%;
+        max-width: 980px;
+        padding: 10px;
+        margin: auto;
+        box-shadow: $shadow-card;
+        transition: 0.1s;
+        .blog-card-content {
+            max-width: 900px;
+            color: $color-text;
+            padding: 30px 10px 20px 10px;
+            margin: auto;
+            .blog-card-title {
+                font-size: 2.25em;
+                font-family: $font-head-mono;
+                margin: auto;
+            }
+            .blog-card-description {
+                font-size: 1.25em;
+                font-family: $font-body-sans;
+                margin: auto;
+            }
+        }
+        &::hover {
+            box-shadow: $shadow-card-hover;
+            transition: 0.2s;
+        }
+    }
+}
+
+@media all and (max-width: 460px) {
+    /* Using !important so my styles aren't dependent on specificity */
+    body {
+        border: 1px solid red;
+    }
+    .website-title {
+        font-size: 8vw !important;
+    }
+    .column {
+        width: 100% !important;
+        .column-head {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            margin: 10px 0 5px 0 !important;
+            padding: 0 !important;
+            font-size: 10vw !important;
+        }
+        .project-link:first-child {
+            .project-card {
+                margin: 0 !important;
+            }
+        }
+        .project-card {
+            .project-title {
+                font-size: 8vw !important;
+            }
+            .project-description {
+                font-size: 5vw !important;
+            }
+        }
+    }
 }
