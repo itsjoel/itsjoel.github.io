@@ -90,6 +90,7 @@ $shadow-card-hover: 3px 5px 9px dimgray;
             text-align: center;
             background-color: $color-card-bg;
             color: $color-accent;
+            z-index: 1;
         }
         .project-list {
             list-style: none;
