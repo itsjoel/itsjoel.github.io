@@ -18,3 +18,8 @@ colors:
   background: rgb(250, 242, 231)
   body: black
   shadow: gray
+
+plugins:
+  - jekyll-sitemap
+  - jemoji
+  
