@@ -181,9 +181,6 @@ $shadow-card-hover: 3px 5px 9px dimgray;
 
 @media all and (max-width: 460px) {
     /* Using !important so my styles aren't dependent on specificity */
-    body {
-        border: 1px solid red;
-    }
     .website-title {
         font-size: 8vw !important;
     }
