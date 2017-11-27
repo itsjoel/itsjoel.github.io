@@ -2,28 +2,28 @@
 <html>
 <head>
     {% include head.html %}
-    <link href="/assets/style/python-story-lib.css" rel="stylesheet">
     <link href="/assets/style/default.css" rel="stylesheet">    
     <title>{{ page.title }} | {{ site.title }}</title>
     {% if site.tags != "" %}
     {% include collecttags.html %}
     {% endif %}
 </head>
-
 <body>
     {% include nav.html %}
     {% include wip_overlay.html %}
-    <article class="project-description">
-        <header>
+    <article class="post">
+        <header class="article-header">
             <nav>
-                <a href="/index.html" class="inline-link" style="font-size:1.35em;">&lt;- Back to Main Page</a>
+                <a href="/index.html" class="inline-link back-link" style="font-size:1.35em;">&lt;- Back to Main Page</a>
             </nav>
-            <h1 id="website-title">{{ page.title }}</h1>
-            <p class="subtitle">{{ page.description }}</p>
+            <h1 class="article-title">{{ page.title }}</h1>
+            <p class="article-subtitle">{{ page.description }}</p>
             <p class="underline">========================</p>
         </header>
-        <div class="content">
+        <div class="article-body">
+            <div class="article-content">
             {{ content }}
+            </div>
         </div>
     </article>
 </body>
