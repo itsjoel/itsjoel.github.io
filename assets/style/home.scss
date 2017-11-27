@@ -78,6 +78,7 @@ $shadow-card-hover: 3px 5px 9px dimgray;
         vertical-align: top;
         width: calc(100% / 3);
         .column-head {
+            position: relative;
             margin: auto;
             width: $project-card-width;
             padding-top: 1.5vw;
