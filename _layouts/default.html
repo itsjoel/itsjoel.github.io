@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,400i,700,700i|Concert+One|Space+Mono:400,400i,700,700i" rel="stylesheet">
-    <link href="/assets/style/style.css" rel="stylesheet">
-    <link href="/assets/style/python-story-lib.css" rel="stylesheet">
-    <link href="/assets/style/syntax.css" rel="stylesheet">
+    {% include head.html %}
+    <link href="/assets/style/default.css" rel="stylesheet">    
     <title>{{ page.title }} | {{ site.title }}</title>
+    {% if site.tags != "" %}
+    {% include collecttags.html %}
+    {% endif %}
 </head>
-
 <body>
     {% include nav.html %}
-    <article class="project-description">
-        <header>
+    {% include wip_overlay.html %}
+    <article class="post">
+        <header class="article-header">
             <nav>
-                <a href="/index.html" class="inline-link">&lt;- Back to Main Page</a>
+                <a href="/index.html" class="inline-link back-link" style="font-size:1.35em;">&lt;- Back to Main Page</a>
             </nav>
-            <h1 id="website-title">{{ page.title }}</h1>
-            <p class="subtitle">{{ page.description }}</p>
+            <h1 class="article-title">{{ page.title }}</h1>
+            <p class="article-subtitle">{{ page.description }}</p>
             <p class="underline">========================</p>
         </header>
-        <div class="content">
+        <div class="article-body">
+            <div class="article-content">
             {{ content }}
+            </div>
         </div>
     </article>
 </body>

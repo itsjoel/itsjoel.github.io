@@ -10,3 +10,16 @@ collections:
     output: true
 
 highlighter: rouge
+
+sass:
+  sass_dir: _sass
+
+colors:
+  background: rgb(250, 242, 231)
+  body: black
+  shadow: gray
+
+plugins:
+  - jekyll-sitemap
+  - jemoji
+  

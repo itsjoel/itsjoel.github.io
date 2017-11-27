@@ -1,0 +1,51 @@
+<div id="overlay" onclick="overlay_off()">
+    <div class="overlay_box">
+    <h1>Work In Progress</h1>
+    <p class="underline">========================</p>
+    <p class="overlay_text">
+        This site is a work in progress. A lot of the data is placeholder. If this were a more important production, I would not put this up before it was finished. However, because this is kind of for fun, I decided that it would be fine to put an unfinished version up. 👍
+    </p>
+    </div>
+</div>
+<script>
+    window.addEventListener("load", overlay_if_not_visited(), false);
+    function setCookie(cname, cvalue, exdays) {
+        if (exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires="+ d.toUTCString()+";";
+        }
+        document.cookie = cname + "=" + cvalue + ";" + expires + "path=/";
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function overlay_on() {
+        document.getElementById("overlay").style.display = "block";
+    }
+
+    function overlay_off() {
+        document.getElementById("overlay").style.display = "none";
+    }
+
+    function overlay_if_not_visited() {
+        var is_visited = getCookie("visited") !== "yes"
+        if (is_visited) {
+            overlay_on();
+            setCookie("visited", "yes");
+        }
+    }
+</script>

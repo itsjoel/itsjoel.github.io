@@ -1,0 +1,43 @@
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background with opacity */
+    z-index: 10;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+    color: black;
+    text-align: center;
+    h1 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        line-height: 1em;
+        font-size: calc(1vw + 3em);
+    }
+    .overlay_box {
+        padding: 25px;
+        margin-top: 25px;
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        max-width: 1000px;
+        min-width: 300px;
+        display: inline-block;
+        box-shadow: 6px 6px 10px rgb(0, 0, 0);
+    }
+    .overlay_text {
+        font-family: 'Work Sans';
+        font-size: 1.5em;
+    }
+}
